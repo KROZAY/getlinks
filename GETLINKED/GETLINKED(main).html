@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getlinked-hackathon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #150E28;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            /* position: fixed; */
+        }
+        .logo{
+            margin-left: 120px;
+            margin-top: 50px;
+        }
+        ul{
+            margin-top: 53px;
+            margin-left: 200px;
+        }
+        li{
+            display: inline;
+            margin-left: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .reg{
+            border-radius: 4px;
+            padding: 10px 40px;
+            background: linear-gradient(270deg, rgb(142.76, 1.2, 253.99) 0%, rgb(255, 37.9, 116.05) 100%);
+        }
+        .reg2{
+            border-radius: 4px;
+            padding: 10px 40px;
+            background: linear-gradient(270deg, rgb(142.76, 1.2, 253.99) 0%, rgb(255, 37.9, 116.05) 100%);
+            position: relative;
+            bottom: 350px;
+            left: 135px;
+        }
+        .flare1{
+            position: relative;
+            width: 600px;
+            height: 500px;
+            bottom: 27px;
+            left: 70px;
+            background-blend-mode: hard-light;
+        }
+        .flare2{
+            position: absolute;
+            width: 00px;
+            height: 700px;
+            top: 1265px;
+            left: 70px;
+            background-blend-mode: soft-light;
+        }
+        .gentech{
+            width: 610px;
+            height: 200px;
+            position: relative;
+            left: 133px;
+            bottom: 330px;
+        }
+        .participate{
+            position: relative;
+            left: 135px;
+            bottom: 330px;
+            color: white;
+            font-weight: 400;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        .genz{
+            width: 620px;
+            height: 480px;
+            position: relative;
+            right: -25px;
+            top: 262px;
+            object-fit: fill;
+        }
+        section{
+            display: flex;
+            background-color: #150E28;
+            align-items: center;
+            width: 100%;
+            height: 600px;
+        }
+        .onebox{
+            background-color: #150E28;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 560px;
+        }
+        .three{
+            margin-left: 50px;
+        }
+        .four{
+            margin-right: 50px;
+        }
+        .idea{
+            width: 520px;
+            height: 420px;
+            object-fit: contain;
+        }
+        .textone{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+        .purpletext{
+            color: #D434FE;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+        .texttwo{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .twobox{
+            background-color: #150E28;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 560px;
+        }
+        .five{
+            margin-left: 140px;
+        }
+        .six{
+            margin-right: 0px;
+        }
+        .threebox{
+            background-color: #150E28;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 720px;
+        }
+        .seven{
+            margin-left: 50px;
+        }
+        .eight{
+            margin-bottom: 80px;
+            margin-right: 60px;
+        }
+        .woman{
+            width: 650px;
+            height: 580px;
+            object-fit: contain;
+        }
+        .people{
+            width: 520px;
+            height: 480px;
+            object-fit: contain;
+            margin-top: 80px;
+        }
+        .text-wrapper-2 {
+            font-size: 17px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ff25b8;
+            font-weight: 550;
+            line-height: 14px;
+        }
+        .text-wrapper-3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            font-size: 15px;
+            line-height: 14px;
+        }
+        .read{
+            border-radius: 4px;
+            padding: 10px 40px;
+            background: linear-gradient(270deg, rgb(142.76, 1.2, 253.99) 0%, rgb(255, 37.9, 116.05) 100%);
+            position: relative;
+            top: 45px;
+        }
+        .man{
+            width: 650px;
+            height: 550px;
+            object-fit: contain;
+        }
+        .fourbox{
+            background-color: #150E28;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            height: 720px;
+        }
+        .text-wrapper-4 {
+            width: 114px;
+            font-family: "MADE TOMMY Outline-Medium", Helvetica;
+            font-weight: 500;
+            color: #a765fc;
+            font-size: 96px;
+            position: relative;
+        }
+        .text-wrapper-5 {
+            width: 114px;
+            font-family: "MADE TOMMY Outline-Medium", Helvetica;
+            font-weight: 500;
+            color: #D434FE;
+            font-size: 96px;
+            position: relative;
+        }
+        .text-wrapper-6 {
+            width: 114px;
+            font-family: "MADE TOMMY Outline-Medium", Helvetica;
+            font-weight: 500;
+            color: #a765fc;
+            font-size: 96px;
+            position: relative;
+        }
+        .frequently{
+            display: flex;
+            background-color: #150E28;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 760px;
+        }
+        .ques{
+            position: relative;
+            top: 50px;
+            left: 140px;
+        }
+        .mark{
+            margin-left: 170px;
+        }
+        .think{
+            margin-right: 50px;
+        }
+        .mone{
+            position: relative;
+            right: 80px;
+            top: 40px;
+        }
+        .mthree{
+            position: relative;
+            left: 80px;
+            top: 40px;
+        }
+        aside{
+            background-color: #150E28;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 1100px;
+        }
+        .timeline{
+            text-align: center;
+        }
+        .times{
+            width: 900px;
+            height: 900px;
+            object-fit: contain;
+        }
+        .prizes{
+            display: flex;
+            background-color: #150E28;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 720px;
+        }
+        .cupwin{
+            position: relative;
+            left: 80px;
+            top: 40px;
+        }
+        .cup{
+            width: 410px;
+            height: 342px;
+            object-fit: contain;
+        }
+        .winner{
+            position: relative;
+            right: 70px;
+            top: 20px;
+        }
+        .medals{
+            width: 552px;
+            height: 354px;
+            object-fit: contain;
+        }
+        .preward{
+            position: relative;
+            right: 100px;
+            bottom: 50px;
+        }
+        .partners{
+            background-color: #150E28;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 700px;
+        }
+        .parsp{
+            width: 950px;
+            height: 480px;
+            object-fit: contain;
+        }
+        .ppat{
+            display: flex;
+            background-color: #150E28;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 1017px;
+        }
+        .policy{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #ff25b8; */
+            border-radius: 4px;
+            border: 1px solid #D434FE;
+            position: relative;
+            left: 140px;
+            top: 40px;
+            padding-bottom: 70px;
+        }
+        .update{
+            color: gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            /* line-height: 25px; */
+        }
+        .license{
+            margin-top: 100px;
+        }
+        .protect{
+            width: 420px;
+            height: 461px;
+            object-fit: contain;
+            position: relative;
+            top: 180px;
+            left: 10px;
+        }
+        .mank{
+            width: 650px;
+            height: 550px;
+            object-fit: contain;
+            position: relative;
+            bottom: 146px;
+            left: 33px;
+        }
+        .texttwo2{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            position: relative;
+            bottom: 30px;
+        }
+        .texttwo3{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .texttwo4{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            padding-left: 20px;
+        }
+        .texttwo5{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            padding-left: 20px;
+        }
+        .reads{
+            border-radius: 4px;
+            padding: 10px 40px;
+            background: linear-gradient(270deg, rgb(142.76, 1.2, 253.99) 0%, rgb(255, 37.9, 116.05) 100%);
+        }
+        .but{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .stan{
+            position: relative;
+            bottom: 23px;
+            left: 13px;
+        }
+        footer{
+            display: flex;
+            background-color: #100b20;
+            height: 400px;
+            align-items: center;
+            gap: 200px;
+            padding: 100px 0px;
+            padding-bottom: 70px;
+            padding-left: 270px;
+        }
+        .aone{
+            display: block;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        .rsv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .count{
+            position: relative;
+            bottom: 200px;
+            right: 7px;
+        }
+        .round{
+            position: relative;
+            bottom: 270px;
+            left: 105px;
+            width: 420px;
+            height: 420px;
+            object-fit: contain;
+        }
+        .vec{
+            position: relative;
+            top: 215px;
+            left: 60px;
+            width: 170px;
+        }
+        .rev{
+            position: relative;
+            top: 205px;
+            left: 230px;
+            width: 390px;
+            color: white;
+            font-size: 27px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+            <a href=""><img src="getlinked.png" class="logo" alt=""></a>
+        </main>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#timeline">Timeline</a>
+                </li>
+                <li>
+                    <a href="#overview">Overview</a>
+                </li>
+                <li>
+                    <a href="#faqs">FAQs</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="" class="reg">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+
+    <section>
+        <div>
+            <img src="circleblur.png" class="flare1" alt="">
+            
+            <img src="Title (2).png" class="gentech" alt="">
+            <p class="participate">
+                Participate in getlinked tech Hackathon 2023 stand <br/>a chance to win a Big prize
+            </p>
+            <span><a href="" class="reg2">Register</a></span>
+            <img src="Countdown time.png" class="count" alt="">
+        </div>
+
+        <div>
+            <img src="Igniting a Revolution in HR Innovation.png" class="rev" alt="">
+            <img src="Vector 4.png" class="vec" alt="">
+            <img src="man-wearing-smart-glasses-touching-virtual-screen-1.png" class="genz" alt="">
+            <img src="Image 1 (1).png" class="round" alt="">
+        </div>
+    </section>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="onebox">
+
+        <div class="three">
+            <img src="The big idea.png" class="idea" alt="">
+        </div>
+
+        <div class="four">
+            <h1 class="textone">Introduction to getlinked<br><h1 class="purpletext">techHackaton1.0</h1></h1>
+            <br>
+            <p class="texttwo">Our tech hackathon is a melting pot of visionaries, and its purpose is as<br />clear as day: to shape the future. Whether you're a coding genius, a <br />design maverick, or a concept wizard, you'll have the chance to transform <br />your ideas into reality. Solving real-world problems, pushing the boundaries<br />of technology, and creating solutions that can change the world,<br/>that's what we're all about!</p>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="twobox">
+
+        <div class="six">
+            <img src="womansitting.png" class="woman" alt="">
+        </div>
+        <img src="circleblur.png" class="flare2" alt="">
+        <div class="five">
+            <h1 class="textone">Rules and<br><h1 class="purpletext">Guidelines</h1></h1>
+            <br>
+            <p class="texttwo">Our tech hackathon is a melting pot of visionaries, and its purpose is as<br />clear as day: to shape the future. Whether you're a coding genius, a <br />design maverick, or a concept wizard, you'll have the chance to transform <br />your ideas into reality. Solving real-world problems, pushing the boundaries<br />of technology, and creating solutions that can change the world,<br/>that's what we're all about!</p>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="threebox">
+
+        <div class="seven">
+            <img src="manwoman.png" class="people" alt="">
+        </div>
+
+        <div class="eight">
+            <h1 class="textone">Judging Criteria<br><h1 class="purpletext">Key attributes</h1></h1>
+            <br>
+            <p class="innovation">
+                <span class="text-wrapper-2">Innovation and Creativity</span>
+                <span class="text-wrapper-3"
+                    >: Evaluate the uniqueness and creativity of the<br />solution. Consider whether it addresses a
+                    real-world problem in a novel <br />way or introduces innovative features.</span>
+            </p>
+            <br>
+            <p class="functionality">
+                <span class="text-wrapper-2">Functionality:</span>
+                <span class="text-wrapper-3">
+                    Assess how well the solution works. Does it perform its <br />intended functions effectively and without
+                    major issues? Judges would<br />consider the completeness and robustness of the solution.
+                </span>
+            </p>
+            <br>
+            <p class="impact">
+                <span class="text-wrapper-2">Impact and Relevance:</span>
+                <span class="text-wrapper-3"
+                    >Determine the potential impact of the solution <br />in the real world. Does it address a significant
+                    problem, and is it relevant <br />to the target audience? Judges would assess the potential social,
+                    <br />economic, or environmental benefits.
+                </span>
+            </p>
+            <br>
+            <p class="technical">
+                <span class="text-wrapper-2">Technical Complexity:</span>
+                <span class="text-wrapper-3"
+                    >Evaluate the technical sophistication of the solution. <br />Judges would consider the complexity of
+                    the code, the use of advanced <br />technologies or algorithms, and the scalability of the
+                    solution.
+                </span>
+            </p>
+            <br>
+            <p class="adherence">
+                <span class="text-wrapper-2">Adherence to Hackathon Rules:</span>
+                <span class="text-wrapper-3"
+                    >Judges will Ensure that the team adhered <br />to the rules and guidelines of the hackathon, including
+                    deadlines, use of <br />specific technologies or APIs, and any other competition-specific
+                    requirements.
+                </span>
+            </p>
+            <span><a href="" class="read">Read More</a></span>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="frequently">
+        <div class="oneside">
+            <div class="five">
+                <h1 class="textone">Frequently Ask<br><h1 class="purpletext">Questions</h1></h1>
+                <p class="texttwo">We got answers to the questions that you might<br />want to ask about getlinked Hackathon 1.0</p>
+            </div>
+            <div class="ques">
+                <img src="Questionss.png" alt="">
+            </div>
+        </div>
+        <div class="twoside">
+            <div class="mark">
+                <span><img src="mark1.png" class="mone" alt=""></span>
+                <span><img src="mark2.png" class="mtwo" alt=""></span>
+                <span><img src="mark1.png" class="mthree" alt=""></span>
+            </div>
+            <div class="think">
+                <img src="manthink.png" class="man" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <aside>
+        <div class="timeline">
+            <h1 class="textone">Timeline</h1>
+            <br>
+            <p class="texttwo">Here is the breakdown of the time we anticipate<br>using for the upcoming event.</p>
+        </div>
+
+        <div class="schedule">
+            <img src="Timelines.png" class="times" alt="">
+        </div>
+    </aside>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="prizes">
+        <div class="oneside">
+            <div class="cupwin">
+                <img src="trophy.png" class="cup" alt="">
+            </div>
+        </div>
+        <div class="twoside">
+            <div class="mark">
+                <div class="preward">
+                    <h1 class="textone">Prizes and<br><h1 class="purpletext">Rewards</h1></h1>
+                    <p class="texttwo">We got answers to the questions that you might<br />want to ask about getlinked Hackathon 1.0</p>
+                </div>
+            </div>
+            <div class="winner">
+                <img src="Rewards.png" class="medals" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <aside class="partners">
+        <div class="timeline">
+            <h1 class="textone">Partners and Sponsors</h1>
+            <br>
+            <p class="texttwo">Getlinked Hackathon 1.0 is honoured to have the following major<br>companies as its partners and sponsors</p>
+        </div>
+
+        <div class="schedule">
+            <img src="Partner and sponsors section.png" class="parsp" alt="">
+        </div>
+    </aside>
+
+    <hr style="border: 1px solid #4f4758; width: 100%;">
+
+    <div class="ppat">
+        <div class="oneside">
+            <div class="five">
+                <h1 class="textone">Privacy Policy and Term<br><h1 class="purpletext">Terms</h1></h1>
+                <br>
+                <p class="update">Last updated on September 12, 2023</p>
+                <br>
+                <p class="texttwo">Below are our privacy & policy, which outline a lot of goodies<br />it's our aim to always take care of our participant</p>
+            </div>
+            <div class="policy">
+                <div class="license">
+                    <p class="texttwo2">
+                        At getlinked tech Hackathon 1.0, we value your privacy<br />and are committed to protecting your personal
+                        information.<br />This Privacy Policy outlines how we collect, use, disclose, <br />and safeguard your
+                        data when you participate in our tech <br />hackathon event. By participating in our event, you consent
+                        <br />to the practices described in this policy.
+                    </p>
+                    <div class="text-wrapper-2">Licensing Policy</div>
+                    <p class="texttwo3">Here are terms of our Standard License:</p>
+                    <br>
+                    <img src="list terms (1).png" alt="">
+                    <div class="stan">
+                        <p class="texttwo5">The Standard License grants you a non-exclusive right to <br>navigate and register for our event</p>
+                    </div>
+
+                    <img src="list terms (1).png" alt="">
+                    <div class="stan">
+                        <p class="texttwo5">You are licensed to use the item available at any free source <br>sites, for your project developement</p>
+                    </div>
+
+                    <div class="but">
+                        <a href="" class="reads">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="twoside">
+            <div class="mark">
+                <img src="Vector (1).png" class="protect" alt="">
+            </div>
+            <div class="think">
+                <img src="lockman.png" class="mank" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr style="border: 1px solid #4f4758; width: 100%;"> -->
+
+    <footer>
+        <main class="foot">
+            <a href="" class="aone">Questions?</a>
+            <br>
+            <a href="" class="aone">FAQ</a>
+            <a href="" class="aone">Media Center</a>
+            <a href="" class="aone">Ways to Watch</a>
+            <a href="" class="aone">Cookie Preferences</a>
+            <a href="" class="aone">Speed Test</a>
+        </main>
+        <main class="foot">
+            <a href="" class="aone">Help Center</a>
+            <a href="" class="aone">Investor Relation</a>
+            <a href="" class="aone">Terms of Use</a>
+            <a href="" class="aone">Corporate Information</a>
+            <a href="" class="aone">Legal Notices</a>
+        </main>
+        <main class="foot">
+            <a href="" class="aone">Account</a>
+            <a href="" class="aone">Jobs</a>
+            <a href="" class="aone">Privacy</a>
+            <a href="" class="aone">Contact Us</a>
+            <a href="" class="aone">Only on Netflix</a>
+        </main>
+
+        <!-- <div class="rsv">
+            <p class="rsvr">All rights reserved. © getlinked Ltd.</p>    
+        </div> -->
+    </footer>
+
+</body>
+</html>
